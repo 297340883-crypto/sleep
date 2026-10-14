@@ -1,0 +1,19 @@
+安睡声迹 · 安卓 APK 构建指南
+
+当前 ZIP 是可编译的 Android 原生 Java 工程源码，不是 APK 本身。
+在本执行环境中没有 Android SDK/Gradle 构建工具，因此未运行真实 APK 打包及真机测试。
+
+【推荐：无 Android Studio 的打包方式】
+1. 将 ZIP 解压，原样上传到你的 GitHub 私有仓库根目录。
+2. 在仓库的 Actions 页，选择 Build Android APK，点击 Run workflow。
+3. 运行成功后在 Artifacts 下载 SleepScope-debug-apk，解压得到 app-debug.apk。
+4. 把 app-debug.apk 发送到安卓手机并安装。
+
+【电脑 Android Studio 打包】
+安装 Android SDK 35、JDK17、Gradle 8.9 后，导入工程执行 :app:assembleDebug。
+生成路径：app/build/outputs/apk/debug/app-debug.apk
+
+⚠ 请注意：此应用仅提供声学线索。“较长安静间隔”不能认定为真实呼吸暂停，
+无法精确测量呼吸暂停时长，也不能替代多导睡眠监测/正规的家庭睡眠呼吸监测。
+
+更多功能说明与验证步骤详见 README.md。

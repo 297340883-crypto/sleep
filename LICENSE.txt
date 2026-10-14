@@ -1,0 +1,3 @@
+This project is delivered to the requesting user for personal use and modification.
+The source code uses only Android platform APIs at runtime.
+Third-party open-source software (Android Gradle Plugin, JUnit) is fetched only by the user's build environment under the corresponding licenses.
